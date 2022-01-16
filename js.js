@@ -1,3 +1,9 @@
+
+function howsTheGame (){
+
+}
+
+
 function addPlayerMark(){
     let wichPlayer = 0;
     let whoIsNext = Array.from(document.querySelectorAll(".count"));
@@ -15,6 +21,7 @@ function addPlayerMark(){
 
     this.appendChild(x);
     this.removeEventListener("click",addPlayerMark);
+    this.classList.add("clicked");
 }
 
 
