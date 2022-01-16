@@ -1,12 +1,16 @@
 body{
    display:flex;
-   justify-content: center;
+   flex-direction:column;
    align-items:center;
+   
+   
+   
    
 }
 
 
 .gameboard{
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -27,7 +31,7 @@ body{
     transform: scale(1.1);
     transform: rotate(90deg);
     border-radius:10px;
-    transition-duration: 1s;
+    transition-duration: 0.8s;
 }
 .area.clicked{
     background-color:red;
@@ -35,4 +39,13 @@ body{
     transform: rotate(0deg);
     border-radius:10px;
     transition-duration: 1s;
+}
+
+#reset{
+margin-top: 30px;    
+background-color:red;
+}
+
+#reset:hover{
+    transform:scale(1.4);
 }

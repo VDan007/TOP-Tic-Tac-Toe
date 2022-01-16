@@ -1,6 +1,11 @@
 (function addEventListeners(){ 
     const area = Array.from(document.querySelectorAll(".area"));
     area.forEach(a=>a.addEventListener("click",addPlayerMark));
+    const reset = document.querySelector("#reset");
+    function reload(){
+        window.location.reload();
+    }
+    reset.addEventListener("click",reload);
     })();
 
 
