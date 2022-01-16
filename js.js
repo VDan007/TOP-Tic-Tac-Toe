@@ -1,3 +1,8 @@
+(function addEventListeners(){ 
+    const area = Array.from(document.querySelectorAll(".area"));
+    area.forEach(a=>a.addEventListener("click",addPlayerMark));
+    })();
+
 
 function howsTheGame (){
 const area1 = document.querySelector("#area1");
@@ -89,11 +94,9 @@ function addPlayerMark(){
     this.removeEventListener("click",addPlayerMark);
     this.classList.add("clicked");
     howsTheGame();
-}
+};
 
 
 
 
-const area = Array.from(document.querySelectorAll(".area"));
-area.forEach(a=>a.addEventListener("click",addPlayerMark));
 
