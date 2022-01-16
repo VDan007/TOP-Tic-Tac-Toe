@@ -1,7 +1,14 @@
 
 function howsTheGame (){
+const area1 = document.querySelector("#area1");
+const area2 = document.querySelector("#area2");
+const area3 = document.querySelector("#area3");
 
-}
+
+//if(area1.firstChild.textContent == "X"&&
+   if(area1.textContent){console.log("j==");}
+
+};
 
 
 function addPlayerMark(){
@@ -22,6 +29,7 @@ function addPlayerMark(){
     this.appendChild(x);
     this.removeEventListener("click",addPlayerMark);
     this.classList.add("clicked");
+    
 }
 
 
@@ -29,3 +37,4 @@ function addPlayerMark(){
 
 const area = Array.from(document.querySelectorAll(".area"));
 area.forEach(a=>a.addEventListener("click",addPlayerMark));
+
