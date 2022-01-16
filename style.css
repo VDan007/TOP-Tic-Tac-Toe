@@ -13,4 +13,17 @@ body{
     width: 400px;
     height: 400px;
     background-color: greenyellow;
+    border: 1px solid black;
+    grid-gap:2px;
+}
+.area{
+    background-color:gray;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.area:hover{
+    background-color:greenyellow;
+    transform: scale(1.1);
+    border-radius:10px;
 }
