@@ -44,9 +44,19 @@ body{
 
 #reset{
 margin-top: 30px;    
+margin-bottom: 30px;
 background-color:red;
 }
 
 #reset:hover{
     transform:scale(1.4);
+}
+
+
+#result{
+    width: 400px;
+    height: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
